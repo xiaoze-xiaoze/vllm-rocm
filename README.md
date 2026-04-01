@@ -84,7 +84,7 @@ pip install https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2/torch-2.9.1%2Bro
 export FLASH_ATTENTION_TRITON_AMD_ENABLE="TRUE"    # 开启 ROCm 支持
 git clone https://github.com/Dao-AILab/flash-attention.git
 cd flash-attention
-GPU_ARCHS="gfx1511"    # AMD AIMAX+ 395 的 GPU 架构是 gfx1511
+export GPU_ARCHS="gfx1151"    # AMD AIMAX+ 395 的 GPU 架构是 gfx1511
 python setup.py install
 cd ..  
 ```
